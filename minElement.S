@@ -36,7 +36,6 @@ addi t3, x0, 0 # row element number
 cycle:
 lw t6, 0(a4) # load value from array
 bge t6, t5, increm
-blt t6, t5, swope
 
 swope:
 lw t5, 0(a4)
@@ -51,11 +50,11 @@ blt t4, t2, init
 ret
 
 print:
-addi a0, x0, 1 # print_int ecall
+addi a0, x0, 1
 lw a1, 0(a3)
 ecall
 
-addi a0, x0, 11 # print_char ecall
+addi a0, x0, 11
 addi a1, x0, 32
 ecall
 
