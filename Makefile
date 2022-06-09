@@ -1,7 +1,7 @@
 PHONY: clean
 
-dump_name=example.dump
-executable_name=example.elf
+dump_name=minElement.dump
+executable_name=minElement.elf
 
 default: $(dump_name) $(executable_name)
 
